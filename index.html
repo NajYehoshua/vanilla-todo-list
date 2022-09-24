@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- header container -->
+      <header class="header-container">
+        <h1 class="header-title">Todo List</h1>
+      </header>
+
+      <!-- main container -->
+      <main class="main-container">
+        <!-- form section -->
+        <section class="form-section">
+          <div class="container">
+            <form class="form-panel">
+              <label for="todo">Todo</label>
+              <input type="text" class="input-field" id="todo" />
+            </form>
+          </div>
+        </section>
+
+        <div class="buffer"></div>
+
+        <!-- todos list section -->
+        <section class="todo-section">
+          <div class="container">
+            <!-- todo lists -->
+            <ul class="todo-list">
+              <!-- <li class="todo-list_item">
+                <div class="todo-card">
+                  <div class="col-1">
+                    <p class="todo-body">Exercise every morning</p>
+                  </div>
+
+                  <div class="col-2">
+                    <button class="btn">
+                      <i class="fa-solid fa-xmark fa-2x"></i>
+                    </button>
+                  </div>
+                </div>
+              </li> -->
+
+              <!-- <li class="todo-list_item">
+                <div class="todo-card">
+                  <div class="col-1">
+                    <p class="todo-body">Water the plants</p>
+                  </div>
+
+                  <div class="col-2">
+                    <button class="btn">
+                      <i class="fa-solid fa-xmark fa-2x"></i>
+                    </button>
+                  </div>
+                </div>
+              </li> -->
+
+              <!-- <li class="todo-list_item">
+                <div class="todo-card">
+                  <div class="col-1">
+                    <p class="todo-body">Do the laundry</p>
+                  </div>
+
+                  <div class="col-2">
+                    <button class="btn">
+                      <i class="fa-solid fa-xmark fa-2x"></i>
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="todo-list_item">
+                <div class="todo-card">
+                  <div class="col-1">
+                    <p class="todo-body todo-body_done">Wash the dishes</p>
+                  </div>
+
+                  <div class="col-2">
+                    <button class="btn">
+                      <i class="fa-solid fa-xmark fa-2x"></i>
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="todo-list_item">
+                <div class="todo-card">
+                  <div class="col-1">
+                    <p class="todo-body todo-body_done">Clean my room</p>
+                  </div>
+
+                  <div class="col-2">
+                    <button class="btn">
+                      <i class="fa-solid fa-xmark fa-2x"></i>
+                    </button>
+                  </div>
+                </div>
+              </li> -->
+
+              <!-- <li class="todo-list_item">
+                <div class="todo-card">
+                  <div class="col-1">
+                    <p class="todo-body todo-body_done">
+                      Make a visit to dentist
+                    </p>
+                  </div>
+
+                  <div class="col-2">
+                    <button class="btn">
+                      <i class="fa-solid fa-xmark fa-2x"></i>
+                    </button>
+                  </div>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <!-- <footer class="footer-section">
+        <div class="container">
+          <p>
+            <small
+              >Design and Created by <strong>Jan Joshua Macanip</strong></small
+            >
+          </p>
+        </div>
+      </footer> -->
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

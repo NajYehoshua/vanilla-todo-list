@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-1: #fff0f3;
+  --clr-2: #ffccd5;
+  --clr-3: #ffb3c1;
+  --clr-4: #ff8fa3;
+  --clr-5: #ff4d6d;
+  --clr-6: #800f2f;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  background-color: var(--clr-1);
+}
+
+input,
+label {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.buffer {
+  height: 30px;
+}
+
+/* header container */
+.header-container {
+  background: linear-gradient(95deg, var(--clr-4), var(--clr-5));
+  color: var(--clr-1);
+  font-weight: 700;
+  text-align: center;
+  padding: 44px 0;
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* form */
+
+.form-panel {
+  position: relative;
+  top: -20px;
+  background-color: var(--clr-1);
+
+  padding: 18px;
+  border-radius: 8px;
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+label[for="todo"] {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(175, 175, 175);
+}
+
+.input-field {
+  font-family: inherit;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 4px solid var(--clr-2);
+  font-size: 18px;
+  transition: border 200ms ease-in-out;
+}
+
+.input-field:focus {
+  outline: none;
+  border: 4px solid var(--clr-5);
+}
+
+/* todo section*/
+
+.todo-list_item {
+  margin-bottom: 16px;
+}
+
+.todo-card {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  border-radius: 8px;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.col-1,
+.col-2 {
+  padding: 12px;
+}
+
+.col-1 {
+  flex-grow: 3;
+
+  cursor: pointer;
+}
+
+.col-2 {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--clr-5);
+}
+
+.btn {
+  cursor: pointer;
+  padding: 4px 16px;
+  border: 0;
+  background-color: var(--clr-5);
+}
+
+.fa-xmark {
+  color: var(--clr-1);
+}
+
+.todo-body {
+  font-weight: 700;
+  color: var(--clr-6);
+}
+
+.todo-body_done {
+  text-decoration: line-through;
+}
+
+/* footer section */
+.footer-section {
+  text-align: center;
+  padding: 14px 0;
+}
+
+@media (min-width: 375px) {
+  .container {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
